@@ -2,6 +2,7 @@ from easygui import *
 import sys
 list=[]
 sum=0
+x=0
 z=""
 a=""
 
@@ -506,19 +507,19 @@ while 1:
                         elif choice=="Vijay Sales->75000":
                             x=75000
 
-       if choice=="Books":
-          msg ="Which Book/s Do You Wish To Shop?"
-          title = "Books By Genre"
-          choices = ["Art","Biography","Children's", "Classics","Fiction","History","Horror","Mystery","Poetry","Psychology","Romance","Science","Science Fiction","Thriller","Travel"]
-          choice = choicebox(msg, title, choices)
+    if choice=="Books":
+        msg ="Which Book/s Do You Wish To Shop?"
+        title = "Books By Genre"
+        choices = ["Art","Biography","Children's", "Classics","Fiction","History","Horror","Mystery","Poetry","Psychology","Romance","Science","Science Fiction","Thriller","Travel"]
+        choice = choicebox(msg, title, choices)
 
-         if choice=="Art":
+        if choice=="Art":
             msg ="Which Vendor do You Prefer?"
             title = "List Of Vendors"
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -533,7 +534,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -548,7 +549,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -563,7 +564,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -578,7 +579,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -593,7 +594,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -608,7 +609,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -623,7 +624,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -638,7 +639,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -653,7 +654,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -668,7 +669,7 @@ while 1:
             choices = ["Crossword","Library","Reliance Digital"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -683,7 +684,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -698,7 +699,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -713,7 +714,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -728,7 +729,7 @@ while 1:
             choices = ["Crossword","Library","The Book Store"]
             choice = choicebox(msg, title, choices)
 
-            elif choice=="Crossword":
+            if choice=="Crossword":
                 x=80000
  
             elif choice=="Library":
@@ -801,15 +802,580 @@ while 1:
             choice = choicebox(msg, title, choices)
 
             if choice=="Chanel":
-                x=80000
+                x=8000
  
             elif choice=="Dolce & Gabbana":
-                x=65000
+                x=6500
 
             elif choice=="Giorgio Armani":
-                x=75000
+                x=7000
 
             elif choice=="Gucci":
-                x=4000
-                else:
-    sys.exit()
+		x=5000
+		
+	    elif choice=='Hugo Boss':
+                x=8000
+ 
+            elif choice=='Louis Viutton':
+                x=6500
+
+            elif choice=='Prada':
+                x=7000
+
+            elif choice=='Tiffany & Co.':
+		x=5000
+
+
+
+    if choice=="Laptops":
+        msg ="Which Appliance/s Do You Wish To Shop?"
+        title = "Famous Laptop Companies"
+        choices = ['Acer', 'Apple', 'Asus', 'Dell', 'Hewlett-Packard', 'Lenevo', 'MSI', 'Microsoft']
+        choice = choicebox(msg, title, choices)
+
+        if  choice=="Acer":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Apple":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Acer":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Asus":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Dell":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Hewlett-Packard":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Lenevo":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="MSI":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Microsoft":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+    if choice=="Mobiles":
+        msg ="Popular Mobile Brands"
+        title = "Which Brand Do you Want?"
+        choices = ['Apple', 'Gionee', 'Honor', 'Huawei', 'LG', 'Mi', 'Micromax', 'Motorola', 'Nokia', 'Oneplus', 'Oppo', 'Samsung', 'Sony', 'Vivo']
+        choice = choicebox(msg, title, choices)
+
+        if  choice=="Apple":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Gionee":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Honor":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Huawei":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="LG":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Mi":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Micromax":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Motorola":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Nokia":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Oneplus":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Oppo":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Samsung":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Sony":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+        elif  choice=="Vivo":
+            msg ="Which Vendor do You Prefer?"
+            title = "List Of Vendors"
+            choices = [str(choice)+" Store","Croma","Reliance Digital","Vijay Sales"]
+            choice = choicebox(msg, title, choices)
+
+            if choice==str(choice)+" Store->50000":
+                x=50000
+             
+            elif choice=="Croma->80000":
+                x=80000
+ 
+            elif choice=="Reliance Digital->65000":
+                x=65000
+
+            elif choice=="Vijay Sales->75000":
+                x=75000
+
+    if choice=="Watches":
+                msg ="Trending Watch Brands"
+                title = "Which Brand Do you Want?"
+                choices = ['Casio', 'Fastrack', 'Fossil', 'Giordano', 'Sonata', 'Timex', 'Titan']
+                choice = choicebox(msg, title, choices)
+
+                if choice=="Casio":
+                    msg ="From Where To Buy"
+                    title = "List Of Vendors"
+                    choices = [str(choice)+" Store","Croma","The Watch Stop"]
+                    choice = choicebox(msg, title, choices)
+
+                    if choice==str(choice)+" Store":
+                        x=50000
+             
+                    elif choice=="Croma":
+                        x=80000
+ 
+                    elif choice=="The Watch Stop":
+                        x=65000
+
+                elif  choice=="Fastrack":
+                    msg ="From Where To Buy"
+                    title = "List Of Vendors"
+                    choices = [str(choice)+" Store","Croma","The Watch Stop"]
+                    choice = choicebox(msg, title, choices)
+
+                    if choice==str(choice)+" Store":
+                        x=50000
+             
+                    elif choice=="Croma":
+                        x=80000
+ 
+                    elif choice=="The Watch Stop":
+                        x=65000
+
+                elif  choice=="Fossil":
+                    msg ="From Where To Buy"
+                    title = "List Of Vendors"
+                    choices = [str(choice)+" Store","Croma","The Watch Stop"]
+                    choice = choicebox(msg, title, choices)
+
+                    if choice==str(choice)+" Store":
+                        x=50000
+             
+                    elif choice=="Croma":
+                        x=80000
+ 
+                    elif choice=="The Watch Stop":
+                        x=65000
+
+                elif  choice=="Giordano":
+                    msg ="From Where To Buy"
+                    title = "List Of Vendors"
+                    choices = [str(choice)+" Store","Croma","The Watch Stop"]
+                    choice = choicebox(msg, title, choices)
+
+                    if choice==str(choice)+" Store":
+                        x=50000
+             
+                    elif choice=="Croma":
+                        x=80000
+ 
+                    elif choice=="The Watch Stop":
+                        x=65000
+
+                elif  choice=="Sonata":
+                    msg ="From Where To Buy"
+                    title = "List Of Vendors"
+                    choices = [str(choice)+" Store","Croma","The Watch Stop"]
+                    choice = choicebox(msg, title, choices)
+
+                    if choice==str(choice)+" Store":
+                        x=50000
+             
+                    elif choice=="Croma":
+                        x=80000
+ 
+                    elif choice=="The Watch Stop":
+                        x=65000
+
+                elif  choice=="Timex":
+                    msg ="From Where To Buy"
+                    title = "List Of Vendors"
+                    choices = [str(choice)+" Store","Croma","The Watch Stop"]
+                    choice = choicebox(msg, title, choices)
+
+                    if choice==str(choice)+" Store":
+                        x=50000
+             
+                    elif choice=="Croma":
+                        x=80000
+ 
+                    elif choice=="The Watch Stop":
+                        x=65000
+
+                elif  choice=="Titan":
+                    msg ="From Where To Buy"
+                    title = "List Of Vendors"
+                    choices = [str(choice)+" Store","Croma","The Watch Stop"]
+                    choice = choicebox(msg, title, choices)
+
+                    if choice==str(choice)+" Store":
+                        x=50000
+             
+                    elif choice=="Croma":
+                        x=80000
+
+    # note that we convert choice to string, in case
+    # the user cancelled the choice, and we got None.
+    msgbox("You chose: " + str(choice))
+
+    msg = "Do you want to continue shopping?"
+    title = "Please Confirm"
+    if ccbox(msg, title):     # show a Continue/Cancel dialog
+        list.append(choice)
+        sum=sum+x
+        pass  # user chose Continue
+        
+    else:
+        list.append(choice)
+        sum=sum+x
+        textbox(msg="Bill",title="Bill",text=str(list)+'Final Amount='+str(sum),codebox=0)
+        sys.exit(0)
+
+
