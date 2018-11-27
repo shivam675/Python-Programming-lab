@@ -1,4 +1,4 @@
-rom easygui import *
+from easygui import *
 import sys
 list=[]
 sum=0
