@@ -1,5 +1,5 @@
-x=int(input("enter first no."))
-y=int(input("dnter second no."))
+x=float(input("enter first no."))
+y=float(input("enter second no."))
 print("1-add,2-substract,3-multiply,4-divide")
 choice=int(input("enter choice"))
 if choice==1:
@@ -9,4 +9,4 @@ elif choice==2:
 elif choice==3:
  print("choice is multiplication",x*y)
 elif choice==4:
-print("choice is division",x%y)
+ print("choice is division",x/y)
